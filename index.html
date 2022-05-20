@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mika Turner | Front End Developer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+    <div class="grid-container">
+      <div class="grid-item about">
+        <object type="image/svg+xml" data="./img/about.svg"></object>
+      </div>
+      <div class="sun-container sun item">
+        <div class="sun-1"></div>
+        <div class="sun-2"></div>
+        <div class="sun-3"></div>
+        <div class="sun-4"></div>
+      </div>
+      <div class="grid-item skills">
+        <object type="image/svg+xml" data="./img/skills.svg"></object>
+      </div>
+      <div class="grid-item contact">
+        <object type="image/svg+xml" data="./img/contact.svg"></object>
+      </div>
+      <div class="grid-item portfolio">
+        <object type="image/svg+xml" data="./img/projects.svg"></object>
+      </div>
+    </div>
+    <picture class="background">
+      <!--For Horizontal 4:3 devices-->
+      <source
+        media="(min-width:768px) and (min-height: 1024px)"
+        srcset="./img/vertbkgrnd-768-2x.png, ./img/vertbkgrnd-912-2x.png"
+      />
+      <!--For horizontal ultra-wide screen mobile devices-->
+      <source
+        media="(min-width:653px) and (min-height: 278px) "
+        srcset="
+          ./img/hrzbckgrnd-1280-2x.png,
+          ./img/hrzbckgrnd-1024-2x.png,
+          ./img/hrzbckgrnd-896-2x.png,
+          ./img/hrzbckgrnd-740-2x.png,
+          ./img/hrzbckgrnd-653-2x.png
+        "
+      />
+
+      <!--For vertical ultra-wide screen mobile devices-->
+      <source
+        media="(min-width:278px) and (min-height: 653px)"
+        srcset="
+          ./img/vertbkgrnd-280-2x.png,
+          ./img/vertbkgrnd-375-2x.png,
+          ./img/vertbkgrnd-412-2x.png,
+          ./img/vertbkgrnd-540-2x.png
+        "
+      />
+      <!--For Desktop and Larger Screens-->
+      <source
+        media="(min-width:1024px)"
+        srcset="
+          ./img/hrzbckgrnd-1024-1x.png,
+          ./img/hrzbckgrnd-1024-2x.png,
+          ./img/hrzbckgrnd-1280-1x.png,
+          ./img/hrzbckgrnd-1280-2x.png,
+          ./img/hrzbckgrnd-1368-1x.png,
+          ./img/hrzbckgrnd-1368-2x.png,
+          ./img/hrzbckgrnd-2880-1x.png,
+          ./img/hrzbckgrnd-2880-2x.png
+        "
+      />
+
+      <img src="./img/hrzbckgrnd-1024-2x.png" alt="green tree tops" />
+    </picture>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
